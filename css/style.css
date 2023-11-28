@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Rubik&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    :root{
+        /* backgroud colors */
+        --primary-color:#4458dc;
+        --secondary-color:#854fee;
+        /* --secondary-color:rgb(109, 41, 41); */
+        --bg-white:#fff;
+        --bg-light:#faf8ff;
+        --bg-black:#000;
+        --bg-gray:#eee;
+        --gradient:linear-gradient(to right,#4458dc 0%,#854fee 100%),radial-gradient(circle at top left,#4458dc,#854fee)
+        /* text color */
+        --primary-text:#4458dc;
+        --secondary-text:#854fee;
+        --text-white:#fff;
+        --text-light:#faf8ff;
+        --text-black:#000;
+        --text-gray:#eee;
+
+        /* font family */
+        --primary-font:'Rubik',sans-serif;
+        --secondary-font:'Roboto',sans-serif;
+
+    }
+    body{
+
+        font-family: var(--secondary-font);
+        width: 100%;
+        
+        background-repeat: repeat;
+        /* background-image: url('path/to/your-image.jpg'); */
+        background-size: cover; /* Adjust as needed */
+        background-position: center; /* Adjust as needed */
+    }
+    a{
+        text-decoration: none;
+    }
+    /* custom css */
+    ::-webkit-scrollbar{
+        width: 0.25rem;
+
+    }
+    ::-webkit-scrollbar-track{
+        background: var(--bg-gray);
+    }
+    ::-webkit-scrollbar-thumb{
+        background: var(--primary-color);
+    }
+    section{
+        padding: 5rem 0;
+
+    }
+    .main-btn{
+        display: inline-block;
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 2.875rem;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 0.3125rem;
+        box-shadow: 0 0.625rem 1.875rem rgb(118 85 22/30%);
+        border: double 0.125rem transparent;
+        padding: 0 2.625rem;
+        transition: all .3s ease-in-out;
+        --webkit-transition:all .3s ease-in-out;
+    }
+    .primary-btn{
+        background-image: var(--gradient);
+        color: var(--text-white);
+    }
+    .primary-btn:hover{
+        border-color: var(--secondary-color);
+        background: var(--bg-white);
+        color: var(--secondary-text);
+        box-shadow: none;
+
+    }
+    .secondary-btn{
+        background-image: var(--bg-white);
+        color: var(--secondary-text);
+        border-color: var(--secondary-color);
+    }
+   .secondary-btn:hover{
+    background: var(--gradient);
+    color: var(--text-white);
+    box-shadow: none;
+   }
+   #logo{
+    border-radius: 15rem;
+    height: 2rem;
+   }
+   #side-image{
+     height: 25rem;
+     width: 30rem;
+
+   }
+   h1{
+    font-weight: bold
+
+   }
+ /* Add this CSS in your HTML file or include it in your existing stylesheet */
+
+#downloadButton {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #fff; /* White background color */
+    color: var(--secondary-text); /* Blue text color */
+    border: 2px solid var(--secondary-color); /* Blue border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#downloadButton:hover {
+    background-color: var(--secondary-color); /* Button background color on hover */
+    color: white; /* Text color on hover */
+    border-color:var(--secondary-color); /* Blue border color on hover */
+}
+#icon{
+    height: 2rem;
+    width: 2rem;
+}
+/* Add this CSS in your HTML file or include it in your existing stylesheet */
+
+#learnMoreButton {
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--secondary-color); /* Button background color */
+    color: #fff; /* Button text color */
+    border: 3px solid var(--secondary-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#learnMoreButton:hover {
+    background-color:white; /* Button background color on hover */
+    color: var(--secondary-text); /* Text color on hover */
+    border-color: var(--secondary-color); /* Button border color on hover */
+}
+.hero-content{
+    display: flex;
+    gap:3rem;
+    margin-top: 5rem;
+
+
+}
+section {
+    
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+
+.skills-container {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    flex: 0 0 15vw; /* Adjust the width as needed */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.skill-title {
+    font-size: 18px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.skill-description {
+    font-size: 14px;
+    color: #555;
+}
+.skill-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+#about{
+ display: flex;
+ align-items: center;
+}
+#aboutimg{
+    height:25rem ;
+    width: 25rem;
+}
+#top-container{
+    
+    margin: 5rem;
+}
+.certificate-section {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.certificate-image {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.show-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#password{
+    display: none;
+}
+#wrong{
+    display: none;
+}
+.project-card {
+    /* display: flex; */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.project-title {
+    font-size: 18px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+/* header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+} */
+
+nav {
+    color: white;
+    background-color:var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+}
+
+ .nav-link{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.social{
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+}
+#icons{
+    width: 3rem;
+    height: 3rem;
+    /* background-color: rgb(240, 178, 64); */
+    border-radius: 5rem;
+}
+.link:hover{
+    cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>'),pointer;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(201, 159, 81);
+    border-radius: 2rem;
+}
+.git:hover:hover{
+    cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>'),pointer;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(240, 178, 64);
+    border-radius: 5rem;
+}
+.gmail:hover:hover{
+    cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>'),pointer;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(240, 178, 64);
+    border-radius: 5rem;
+}
+.skill-card {
+    width: 200px;
+    height: 250px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .skill-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .skill-card:hover .skill-description {
+    transform: translateY(0);
+  }
+  .skill-card {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+  }
+  .skills-container{
+    margin-left: 100px;
+   
+  }
+  #h2{
+    margin-left: 50px;
+  }
+  
+   /* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .skill-card {
+      margin: 10px;
+      height: 40vh;
+      width: 120vw;
+    }
+    .skills-container{
+        display:grid;
+        grid-template-columns: repeat(3,250);
+        grid-template-columns:repeat(auto-fit,minmax(250,300))
+      }
+      .skill-card {
+        margin-top: 10px;
+        height: 250px;
+        width: 300px;
+      }
+      .skills-container{
+         display:inline-block
+        }
+      body{
+          width:600px;
+      }
+      #h2{
+        margin-top: 10px;
+      }
+      .hero-content{
+        display:block
+    }
+     }
+    .hero-image{
+        width:250px;
+        height:300px;
+        margin-left:200px;
+      
+    }
+  
+  
+  
